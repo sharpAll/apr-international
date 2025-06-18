@@ -6,23 +6,27 @@
           <img src="../../assets/img/title-apr.png" height="50px" alt />
         </a>
         <ul class="container menu-box u-cb">
-          <router-link to="/CH/home" tag="li">
+          <router-link to="/CH/home" tag="li" class="box-li">
             <span class="menu-item">首页</span>
           </router-link>
 
-          <router-link to="/CH/aboutUs" tag="li">
+          <router-link to="/CH/aboutUs/introduce" tag="li" class="box-li">
             <span class="menu-item">关于我们</span>
+            <ul class="li-menu">
+              <li class="li-item" @click.stop="go('/CH/aboutUs/introduce')">公司介绍</li>
+              <li class="li-item" @click.stop="go('/CH/aboutUs/service')">我们的服务</li>
+            </ul>
           </router-link>
 
-          <router-link to="/CH/range" tag="li">
+          <router-link to="/CH/range" tag="li" class="box-li">
             <span class="menu-item">产品</span>
           </router-link>
 
-          <router-link to="/CH/service" tag="li">
+          <router-link to="/CH/service" tag="li" class="box-li">
             <span class="menu-item">APR优势</span>
           </router-link>
 
-          <router-link to="/CH/vision" tag="li">
+          <router-link to="/CH/vision" tag="li" class="box-li">
             <span class="menu-item">联系我们</span>
           </router-link>
         </ul>
@@ -147,6 +151,9 @@ export default {
         pathArray[1] = language;
         this.$router.push(pathArray.join("/"));
       }
+    },
+    go(url){
+      this.$router.push(url);
     }
   }
 };
@@ -168,7 +175,7 @@ export default {
   margin-top: 12px;
   position: relative;
 }
-.nav ul.menu-box li {
+.nav ul.menu-box li.box-li {
   float: left;
   list-style: none;
   width: 20%;
@@ -179,7 +186,7 @@ export default {
   position: relative;
   cursor: pointer;
 }
-.nav ul.menu-box li span.menu-item {
+.nav ul.menu-box li.box-li span.menu-item {
   height: 58px;
   display: inline-block;
   color: #312d2d;
@@ -187,10 +194,10 @@ export default {
   letter-spacing: 1.5px;
   position: relative;
 }
-.nav ul.menu-box li.cur span.menu-item {
+.nav ul.menu-box li.box-li.cur span.menu-item {
   border-bottom: 4px solid #606ecd;
 }
-.nav ul.menu-box li span.menu-item:after {
+.nav ul.menu-box li.box-li span.menu-item:after {
   content: "";
   width: 0;
   display: block;
@@ -199,9 +206,31 @@ export default {
   background-color: #606ecd;
   border-radius: 2px;
 }
-.nav ul.menu-box li:hover span.menu-item:after {
+.nav ul.menu-box li.box-li:hover span.menu-item:after {
   transition: 0.12s width ease-in;
   width: 100%;
+}
+.nav ul.menu-box li.box-li .li-menu {
+  background-color: white;
+  width: 100%;
+  color: #312d2d;
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 62px;
+  box-shadow: -1px 0px 24px 0px rgba(75, 76, 79, 0.3);
+  z-index: 99;
+}
+.nav ul.menu-box li.box-li:hover .li-menu {
+  display: block;
+}
+.nav ul.menu-box li.box-li .li-menu .li-item {
+  padding: 0 10px;
+  border-bottom: 1px solid #e4e8ea;
+}
+.nav ul.menu-box li.box-li .li-menu .li-item:hover {
+  background-color: rgba(96, 110, 205, 0.4);
 }
 .nav .Language {
   font-family: arial;

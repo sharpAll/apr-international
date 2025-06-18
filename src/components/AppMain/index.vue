@@ -19,7 +19,7 @@ export default {
 </script>
 <style scoped>
 .app-main {
-  min-height: 90vh;
+  min-height: 92vh;
   height: 1px;
 }
 .fade-in-enter {

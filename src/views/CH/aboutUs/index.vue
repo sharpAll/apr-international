@@ -1,63 +1,60 @@
 <template>
   <div class="block">
     <el-divider>
-      <div class="title">关于科锐高地国际</div>
-      <div class="title-1">Career Highland International（CHI）</div>
+      <div class="title">关于我们</div>
+      <div class="title-1">Asia Plus Research（APR）</div>
     </el-divider>
-    <div class="center-box">
-      <div class="bg-box">
-        <div class="bg-content">
-          <div class="title">专业人才战略</div>
-          <p>
-            世界领先的一站式人力资源解决方案提供商。我们致力于为所专注行业的客户招募高端管理与专业人才，并依托对所专注行业的深入研究开展人才战略咨询、人力资源外包、人才市场深度调研以及培训等服务。我们不断追求更高的目标，致力于打造全行业全地域的商业模式与战略布局。
-          </p>
-        </div>
-        <div style="width:500px;position:absolute;right:0;top:0">
-          <img width="500px" src="../../../assets/img/aboutUs/about1.jpg" />
-        </div>
-      </div>
-    </div>
-    <div class="center-box">
+    <div v-show="type == 'introduce'" class="center-box fade-in" style="margin-top: 5%;">
       <div class="bg-box">
         <div class="bg-content right">
-          <div class="title">业务遍布全球</div>
+          <div class="title">公司介绍</div>
           <p>
-            植根中国香港，在人才招聘领域深耕细作，并将业务扩展至海外市场，业务范围辐射全球，覆盖中国香港及大陆、美国纽约、英国伦敦、法国巴黎、加拿大温哥华和比利时布鲁塞尔等全球主要政商中心，致力于深耕所专注行业的垂直领域与细分职能。
+            HSW是一家以专业为客户提供商业决策为导向的咨询公司，提供极具商业合规、商业道德和诚信的商业调查服务。
+          </p>
+          <br />
+          <p>
+            我们通过内部和外部的商业调查及商业信息收集与分析，在过去的10年中，我们帮助客户有效防范商业欺诈以及潜在的合作交易风险。
           </p>
         </div>
-        <div style="width:500px;position:absolute;left:0;top:0">
-          <img width="500px" src="../../../assets/img/aboutUs/about2.jpg" />
+        <div style="width:550px;position:absolute;left:0;top:0">
+          <el-carousel height="400px">
+            <el-carousel-item>
+              <div class="carousel-bg bg-1"></div>
+            </el-carousel-item>
+            <el-carousel-item>
+              <div class="carousel-bg bg-2"></div>
+            </el-carousel-item>
+          </el-carousel>
         </div>
       </div>
     </div>
-    <div class="center-box">
+    <div v-show="type == 'service'" class="center-box fade-in" style="margin-top: 5%;">
       <div class="bg-box">
         <div class="bg-content">
-          <div class="title">专业顾问团队</div>
+          <div class="title">我们的服务</div>
           <p>
-            以强大的客户资源为背书，我们的专业顾问团队拥有丰富的招聘经验以及深厚的知识储备，深知如何用行之有效的招聘策略帮助企业把握人才变革机遇。CHI已多年连续获得行业内“最佳猎头服务提供商”等荣誉奖项。
+            为客户提供“一站式”服务和调查后支持，包括：项目信息反馈、项目会议沟通、信息来源追溯等等，让客户及时的掌握项目的进展情况。
           </p>
         </div>
         <div style="width:500px;position:absolute;right:0;top:0">
-          <img width="500px" src="../../../assets/img/aboutUs/about3.jpg" />
+          <img width="400px" src="../../../assets/img/aboutUs/service-1.jpg" />
         </div>
       </div>
     </div>
-    <div class="center-box u-tac" style="margin-top:50px">
-      <el-button
-        type="primary"
-        icon="el-icon-phone"
-        style="padding: 15px 40px;font-size:18px"
-        @click="$router.push('./aboutUs/contactUs')"
-        >联系我们</el-button
-      >
-    </div>
+
   </div>
 </template>
 <script>
 export default {
   data() {
-    return {};
+    return {
+      type: this.$route.params.type
+    };
+  },
+  watch: {
+    '$route.params.type'(newVal) {
+      this.type = newVal;
+    }
   }
 };
 </script>
@@ -72,13 +69,23 @@ export default {
   color: #ccc;
   text-align: center;
 }
+.carousel-bg.bg-1 {
+  background: center url(../../../assets/img/aboutUs/introduction-1.jpg) no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.carousel-bg.bg-2 {
+  background: center url(../../../assets/img/aboutUs/introduction-2.jpg) no-repeat;
+  background-size: cover;
+  height: 400px;
+}
 .bg-box {
   background-color: #f9f9f9;
   position: relative;
   margin-top: 40px;
 }
 .bg-box .title {
-  font-size: 20px;
+  font-size: 24px;
   padding-left: 30px;
   text-align: left;
   position: relative;
@@ -95,8 +102,8 @@ export default {
   position: absolute;
 }
 .bg-box .bg-content {
-  margin-right: 500px;
-  padding: 70px 120px 0;
+  margin-right: 600px;
+  padding: 50px 120px 0;
   height: 333px;
 }
 .bg-box .bg-content.right {
@@ -106,6 +113,6 @@ export default {
 .bg-box .bg-content p {
   line-height: 28px;
   color: #888;
-  font-size: 15px;
+  font-size: 18px;
 }
 </style>

@@ -27,3 +27,13 @@ body{background:#fff;font-size: 14px; line-height: 1.42857143;color: #333;}
 .u-tal{text-align:left;}
 .u-tac{text-align:center;}
 .u-tar{text-align:right;}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}

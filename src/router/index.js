@@ -82,7 +82,7 @@ const routes = [
         meta: { title: "首页", parent: "" }
       },
       {
-        path: "CH/aboutUs",
+        path: "CH/aboutUs/:type",
         component: CHAboutUs,
         name: "CH/aboutUs",
         meta: { title: "关于我们", parent: "" }
