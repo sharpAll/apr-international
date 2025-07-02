@@ -1,4 +1,4 @@
-# portal-international
+# apr-international
 包含中文、英文、泰语的综合调研机构网站
 
 ## Project setup
