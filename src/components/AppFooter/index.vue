@@ -3,18 +3,16 @@
     <template v-if="curLanguage == 'CH'">
       <div class="content">
         <div class="logo">
-          <img src="../../assets/img/title.png" width="200px" />
+          <img src="../../assets/img/title-apr.png" width="120px" />
         </div>
         <div class="map" style="left: 260px;">
           <div class="title">网站地图</div>
           <ul>
             <li @click="$router.push('/CH/home')">首页</li>
-            <li @click="$router.push('/CH/aboutUs')">关于我们</li>
-            <li @click="$router.push('/CH/range')">服务范畴</li>
-            <li @click="$router.push('/CH/service')">服务内容与流程</li>
-            <li @click="$router.push('/CH/vision')">愿景使命与优势</li>
-            <li @click="$router.push('/CH/trade')">专注行业及领域</li>
-            <li @click="$router.push('/CH/custom')">客户及评价</li>
+            <li @click="$router.push('/CH/aboutUs/introduce')">关于我们</li>
+            <li @click="$router.push('/CH/product/zx')">产品</li>
+            <li @click="$router.push('/CH/qa')">APR优势</li>
+            <li @click="$router.push('/CH/contact')">联系我们</li>
           </ul>
         </div>
       </div>
@@ -22,53 +20,39 @@
     <template v-else-if="curLanguage == 'EN'">
       <div class="content">
         <div class="logo">
-          <img src="../../assets/img/title-en.png" height="35.6px" />
+          <img src="../../assets/img/title-apr.png" width="120px" />
         </div>
-        <div class="map" style="left: 180px;">
+        <div class="map" style="left: 260px;">
           <div class="title">Website Map</div>
           <ul>
-            <li @click="$router.push('/EN/home')">Profile</li>
-            <li @click="$router.push('/EN/aboutUs')">About us</li>
-            <li @click="$router.push('/EN/range')">Services Covered</li>
-            <li @click="$router.push('/EN/service')">
-              Services Contests&.Process
-            </li>
-            <li @click="$router.push('/EN/vision')">
-              Vision,Mission and Advantages
-            </li>
-            <li @click="$router.push('/EN/trade')">Specialized Industries</li>
-            <li @click="$router.push('/EN/custom')">Clients&.Evaluations</li>
+            <li @click="$router.push('/EN/home')">Home</li>
+            <li @click="$router.push('/EN/aboutUs/introduce')">About Us</li>
+            <li @click="$router.push('/EN/product/zx')">Product</li>
+            <li @click="$router.push('/EN/qa')">APR Advantage</li>
+            <li @click="$router.push('/EN/contact')">Contact Us</li>
           </ul>
         </div>
       </div>
     </template>
-    <template v-else-if="curLanguage == 'FR'">
+    <template v-else-if="curLanguage == 'TH'">
       <div class="content">
         <div class="logo">
-          <img src="../../assets/img/title-en.png" height="35.6px" />
+          <img src="../../assets/img/title-apr.png" width="120px" />
         </div>
-        <div class="map" style="left: 180px;">
-          <div class="title">Website Map</div>
+        <div class="map" style="left: 260px;">
+          <div class="title">แผนผังเว็บไซต์</div>
           <ul>
-            <li @click="$router.push('/FR/home')">Home</li>
-            <li @click="$router.push('/FR/aboutUs')">À propos de nous</li>
-            <li @click="$router.push('/FR/range')">Services</li>
-            <li @click="$router.push('/FR/service')">Contenu et processus</li>
-            <li @click="$router.push('/FR/vision')">
-              Vision, mission et avantage
-            </li>
-            <li @click="$router.push('/FR/trade')">
-              Métiers et secteurs concentrées
-            </li>
-            <li @click="$router.push('/FR/custom')">
-              Clientèle et commentaires
-            </li>
+            <li @click="$router.push('/TH/home')">หน้าหลัก</li>
+            <li @click="$router.push('/TH/aboutUs/introduce')">เกี่ยวกับเรา</li>
+            <li @click="$router.push('/TH/product/zx')">ผลิตภัณฑ์</li>
+            <li @click="$router.push('/TH/qa')">ข้อดีของ APR</li>
+            <li @click="$router.push('/TH/contact')">ติดต่อเรา</li>
           </ul>
         </div>
       </div>
     </template>
     <div class="right">
-      Copyright 2020 Career Highland International All Rights Reserved.
+      Copyright 2025 Asia Plus Research All Rights Reserved.
     </div>
   </footer>
 </template>
@@ -95,18 +79,18 @@ export default {
 .footer .content {
   width: 1200px;
   margin: auto;
-  height: 70px;
+  height: 100px;
   position: relative;
   overflow: hidden;
 }
 .footer .content .logo {
   position: absolute;
-  top: 20px;
+  top: 25px;
   left: 0;
 }
 .footer .content .map {
   position: absolute;
-  top: 15px;
+  top: 25px;
   left: 260px;
 }
 .footer .content .map .title {

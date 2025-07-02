@@ -18,113 +18,118 @@
             </ul>
           </router-link>
 
-          <router-link to="/CH/range" tag="li" class="box-li">
+          <router-link to="/CH/product/zx" tag="li" class="box-li">
             <span class="menu-item">产品</span>
+            <ul class="li-menu">
+              <li class="li-item" @click.stop="go('/CH/product/zx')">企业征信调查</li>
+              <li class="li-item" @click.stop="go('/CH/product/ft')">企业访谈信誉</li>
+              <li class="li-item" @click.stop="go('/CH/product/fm')">媒体负面搜索</li>
+              <li class="li-item" @click.stop="go('/CH/product/sd')">实地考察</li>
+              <li class="li-item" @click.stop="go('/CH/product/sj')">数据匹配</li>
+            </ul>
           </router-link>
 
-          <router-link to="/CH/service" tag="li" class="box-li">
+          <router-link to="/CH/qa" tag="li" class="box-li">
             <span class="menu-item">APR优势</span>
           </router-link>
 
-          <router-link to="/CH/vision" tag="li" class="box-li">
+          <router-link to="/CH/contact" tag="li" class="box-li">
             <span class="menu-item">联系我们</span>
           </router-link>
         </ul>
         <div class="Language u-fr">
           <a class="active" @click="switchLanguage('CH')">中文</a>
           <a @click="switchLanguage('EN')">English</a>
-          <a @click="switchLanguage('FR')">ไทย</a>
+          <a @click="switchLanguage('TH')">ภาษาไทย</a>
         </div>
       </nav>
     </template>
     <template v-else-if="curLanguage == 'EN'">
-      <div class="logo">
-        <div class="container u-cb">
-          <a href="#" class="u-fl">
-            <img src="../../assets/img/title-en.png" height="35.6px" alt />
-          </a>
-          <div class="Language u-fr">
-            <a @click="switchLanguage('CH')">中文</a>
-            <a class="active" @click="switchLanguage('EN')">English</a>
-            <a @click="switchLanguage('FR')">Français</a>
-          </div>
-        </div>
-      </div>
       <nav class="nav">
+        <a href="#" class="u-fl" style="margin-left: 8%;">
+          <img src="../../assets/img/title-apr.png" height="50px" alt />
+        </a>
         <ul class="container menu-box u-cb">
-          <router-link to="/EN/home" tag="li">
-            <span class="menu-item">Profile</span>
-          </router-link>
-
-          <router-link to="/EN/aboutUs" tag="li">
-            <span class="menu-item">About us</span>
-          </router-link>
-
-          <router-link to="/EN/range" tag="li">
-            <span class="menu-item">Services Covered</span>
-          </router-link>
-
-          <router-link to="/EN/service" tag="li">
-            <span class="menu-item" style="line-height:25px">Services Contests&.Process</span>
-          </router-link>
-
-          <router-link to="/EN/vision" tag="li">
-            <span class="menu-item" style="line-height:25px">Vision,Mission and Advantages</span>
-          </router-link>
-
-          <router-link to="/EN/trade" tag="li">
-            <span class="menu-item" style="line-height:25px">Specialized Industries</span>
-          </router-link>
-
-          <router-link to="/EN/custom" tag="li">
-            <span class="menu-item">Clients&.Evaluations</span>
-          </router-link>
-        </ul>
-      </nav>
-    </template>
-    <template v-else-if="curLanguage == 'FR'">
-      <div class="logo">
-        <div class="container u-cb">
-          <a href="#" class="u-fl">
-            <img src="../../assets/img/title-fr.png" height="35.6px" alt />
-          </a>
-          <div class="Language u-fr">
-            <a @click="switchLanguage('CH')">中文</a>
-            <a @click="switchLanguage('EN')">English</a>
-            <a class="active" @click="switchLanguage('FR')">Français</a>
-          </div>
-        </div>
-      </div>
-      <nav class="nav">
-        <ul class="container menu-box u-cb">
-          <router-link to="/FR/home" tag="li">
+          <router-link to="/EN/home" tag="li" class="box-li">
             <span class="menu-item">Home</span>
           </router-link>
 
-          <router-link to="/FR/aboutUs" tag="li">
-            <span class="menu-item">À propos de nous</span>
+          <router-link to="/EN/aboutUs/introduce" tag="li" class="box-li">
+            <span class="menu-item">About Us</span>
+            <ul class="li-menu">
+              <li class="li-item" @click.stop="go('/EN/aboutUs/introduce')">Company Profile</li>
+              <li class="li-item" @click.stop="go('/EN/aboutUs/service')">Services</li>
+            </ul>
           </router-link>
 
-          <router-link to="/FR/range" tag="li">
-            <span class="menu-item">Services</span>
+          <router-link to="/EN/product/zx" tag="li" class="box-li">
+            <span class="menu-item">Product</span>
+            <ul class="li-menu">
+              <li class="li-item" @click.stop="go('/EN/product/zx')">Corporate credit</li>
+              <li class="li-item" @click.stop="go('/EN/product/ft')">Corporate reputation</li>
+              <li class="li-item" @click.stop="go('/EN/product/fm')">Negative media searches</li>
+              <li class="li-item" @click.stop="go('/EN/product/sd')">on-the-spot investigation</li>
+              <li class="li-item" @click.stop="go('/EN/product/sj')">Data Matching</li>
+            </ul>
           </router-link>
 
-          <router-link to="/FR/service" tag="li">
-            <span class="menu-item" style="line-height:25px">Contenu et processus</span>
+          <router-link to="/EN/qa" tag="li" class="box-li">
+            <span class="menu-item">APR Advantage</span>
           </router-link>
 
-          <router-link to="/FR/vision" tag="li">
-            <span class="menu-item" style="line-height:25px">Vision, mission et avantage</span>
-          </router-link>
-
-          <router-link to="/FR/trade" tag="li">
-            <span class="menu-item" style="line-height:25px">Métiers et secteurs concentrées</span>
-          </router-link>
-
-          <router-link to="/FR/custom" tag="li">
-            <span class="menu-item" style="line-height:25px">Clientèle et commentaires</span>
+          <router-link to="/EN/contact" tag="li" class="box-li">
+            <span class="menu-item">Contact Us</span>
           </router-link>
         </ul>
+        <div class="Language u-fr">
+          <a @click="switchLanguage('CH')">中文</a>
+          <a class="active" @click="switchLanguage('EN')">English</a>
+          <a @click="switchLanguage('TH')">ภาษาไทย</a>
+        </div>
+      </nav>
+    </template>
+    <template v-else-if="curLanguage == 'TH'">
+      <nav class="nav">
+        <a href="#" class="u-fl" style="margin-left: 8%;">
+          <img src="../../assets/img/title-apr.png" height="50px" alt />
+        </a>
+        <ul class="container menu-box u-cb">
+          <router-link to="/TH/home" tag="li" class="box-li">
+            <span class="menu-item">หน้าหลัก</span>
+          </router-link>
+
+          <router-link to="/TH/aboutUs/introduce" tag="li" class="box-li">
+            <span class="menu-item">เกี่ยวกับเรา</span>
+            <ul class="li-menu">
+              <li class="li-item" @click.stop="go('/TH/aboutUs/introduce')">แนะนำบริษัท</li>
+              <li class="li-item" @click.stop="go('/TH/aboutUs/service')">บริการ</li>
+            </ul>
+          </router-link>
+
+          <router-link to="/TH/product/zx" tag="li" class="box-li">
+            <span class="menu-item">ผลิตภัณฑ์</span>
+            <ul class="li-menu">
+              <li class="li-item" @click.stop="go('/TH/product/zx')">เครดิตองค์กร</li>
+              <li class="li-item" @click.stop="go('/TH/product/ft')">ความน่าเชื่อถือ</li>
+              <li class="li-item" @click.stop="go('/TH/product/fm')">สื่อค้นหาเชิงลบ</li>
+              <li class="li-item" @click.stop="go('/TH/product/sd')">ทัศนศึกษา</li>
+              <li class="li-item" @click.stop="go('/TH/product/sj')">การจับคู่ข้อมูล</li>
+            </ul>
+          </router-link>
+
+          <router-link to="/TH/qa" tag="li" class="box-li">
+            <span class="menu-item">ข้อดีของ APR</span>
+          </router-link>
+
+          <router-link to="/TH/contact" tag="li" class="box-li">
+            <span class="menu-item">ติดต่อเรา</span>
+          </router-link>
+        </ul>
+        <div class="Language u-fr">
+          <a @click="switchLanguage('CH')">中文</a>
+          <a @click="switchLanguage('EN')">English</a>
+          <a class="active" @click="switchLanguage('TH')">ภาษาไทย</a>
+        </div>
       </nav>
     </template>
   </header>

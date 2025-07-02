@@ -1,19 +1,19 @@
 <template>
   <div class="block">
     <el-divider>
-      <div class="title">关于我们</div>
+      <div class="title">เกี่ยวกับเรา</div>
       <div class="title-1">Asia Plus Research（APR）</div>
     </el-divider>
     <div v-show="type == 'introduce'" class="center-box fade-in" style="margin-top: 5%;">
       <div class="bg-box">
         <div class="bg-content right">
-          <div class="title">公司介绍</div>
+          <div class="title">แนะนำบริษัท</div>
           <p>
-            HSW是一家以专业为客户提供商业决策为导向的咨询公司，提供极具商业合规、商业道德和诚信的商业调查服务。
+            HSW เป็น บริษัท ที่ปรึกษาที่มุ่งเน้นการตัดสินใจทางธุรกิจอย่างมืออาชีพสำหรับลูกค้าโดยให้บริการการสำรวจธุรกิจที่มีการปฏิบัติตามกฎระเบียบทางธุรกิจจริยธรรมทางธุรกิจและความซื่อสัตย์
           </p>
           <br />
           <p>
-            我们通过内部和外部的商业调查及商业信息收集与分析，在过去的10年中，我们帮助客户有效防范商业欺诈以及潜在的合作交易风险。
+            เราได้ช่วยลูกค้าในการป้องกันการฉ้อโกงทางธุรกิจและความเสี่ยงที่อาจเกิดขึ้นจากการซื้อขายร่วมกันอย่างมีประสิทธิภาพในช่วง 10 ปีที่ผ่านมาผ่านการสำรวจธุรกิจและการรวบรวมและวิเคราะห์ข้อมูลทางธุรกิจทั้งภายในและภายนอก
           </p>
         </div>
         <div style="width:550px;position:absolute;left:0;top:0">
@@ -31,9 +31,9 @@
     <div v-show="type == 'service'" class="center-box fade-in" style="margin-top: 5%;">
       <div class="bg-box">
         <div class="bg-content">
-          <div class="title">我们的服务</div>
+          <div class="title">บริการของเรา</div>
           <p>
-            为客户提供“一站式”服务和调查后支持，包括：项目信息反馈、项目会议沟通、信息来源追溯等等，让客户及时的掌握项目的进展情况。
+            ให้บริการลูกค้า "One Stop" และการสนับสนุนหลังการสำรวจรวมถึง: ข้อเสนอแนะข้อมูลโครงการการสื่อสารการประชุมโครงการการตรวจสอบแหล่งที่มาของข้อมูลและอื่น ๆ เพื่อให้ลูกค้าสามารถเข้าใจความคืบหน้าของโครงการได้ทันเวลา
           </p>
         </div>
         <div style="width:500px;position:absolute;right:0;top:0">

@@ -1,77 +1,60 @@
 <template>
   <div class="block">
     <el-divider>
-      <div class="title">WHO WE ARE</div>
-      <div class="title-1">Career Highland International（CHI）</div>
+      <div class="title">About Us</div>
+      <div class="title-1">Asia Plus Research（APR）</div>
     </el-divider>
-    <div class="center-box">
-      <div class="bg-box">
-        <div class="bg-content">
-          <div class="title">Professional Talent Strategy</div>
-          <p>
-            Career Highland International (CHI ) is a global provider for the
-            services of human resources solutions. CHI offers Senior Talent
-            Search, Talent Strategy Consulting, HR Outsourcing, Talent Market
-            Intelligence and Training services for multiple industries and
-            across all functions. In pursuit of the persistent better and higher
-            goal, CHI makes strenuous efforts to create the business model and
-            strategic layout across all the fields globally.
-          </p>
-        </div>
-        <div style="width:500px;position:absolute;right:0;top:0">
-          <img width="500px" src="../../../assets/img/aboutUs/about1.jpg" />
-        </div>
-      </div>
-    </div>
-    <div class="center-box">
+    <div v-show="type == 'introduce'" class="center-box fade-in" style="margin-top: 5%;">
       <div class="bg-box">
         <div class="bg-content right">
-          <div class="title">Globally-covered Business</div>
+          <div class="title">Company Profile</div>
           <p>
-            Career Highland International (CHI ) is based and headquartered in
-            Hong Kong, providing clients and candidates with services from the
-            major political and business centers such as Beijing, Shanghai, New
-            York, London, Paris, Vancouver, Brussels , etc. CHI’s research and
-            services are focused on the vertical fields and classified functions
-            of the businesses dedicated.
+            HSW is a professional consulting firm that provides clients with business decision-making guidance, offering highly compliant, ethical, and honest business investigation services.
+          </p>
+          <br />
+          <p>
+            We have helped our clients effectively prevent commercial fraud and potential risks in cooperative transactions over the past 10 years through internal and external business investigations and collection and analysis of business information.
           </p>
         </div>
-        <div style="width:500px;position:absolute;left:0;top:0">
-          <img width="500px" src="../../../assets/img/aboutUs/about2.jpg" />
+        <div style="width:550px;position:absolute;left:0;top:0">
+          <el-carousel height="400px">
+            <el-carousel-item>
+              <div class="carousel-bg bg-1"></div>
+            </el-carousel-item>
+            <el-carousel-item>
+              <div class="carousel-bg bg-2"></div>
+            </el-carousel-item>
+          </el-carousel>
         </div>
       </div>
     </div>
-    <div class="center-box">
+    <div v-show="type == 'service'" class="center-box fade-in" style="margin-top: 5%;">
       <div class="bg-box">
         <div class="bg-content">
-          <div class="title">Professional Consultancy Team</div>
+          <div class="title">Services</div>
           <p>
-            Career Highland International (CHI ) With the assistance and
-            endorsement of the powerful client resources, CHI has its own
-            professional consultancy team withholding a rich recruitment
-            experience and stockpiled knowledge reserve.
+            Provide customers with "one-stop" services and post survey support, including project information feedback, project meeting communication, information source tracing, etc., to enable customers to timely grasp the progress of the project.
           </p>
         </div>
         <div style="width:500px;position:absolute;right:0;top:0">
-          <img width="500px" src="../../../assets/img/aboutUs/about3.jpg" />
+          <img width="400px" src="../../../assets/img/aboutUs/service-1.jpg" />
         </div>
       </div>
     </div>
-    <div class="center-box u-tac" style="margin-top:50px">
-      <el-button
-        type="primary"
-        icon="el-icon-phone"
-        style="padding: 15px 40px;font-size:18px"
-        @click="$router.push('./aboutUs/contactUs')"
-        >CONTACT US</el-button
-      >
-    </div>
+
   </div>
 </template>
 <script>
 export default {
   data() {
-    return {};
+    return {
+      type: this.$route.params.type
+    };
+  },
+  watch: {
+    '$route.params.type'(newVal) {
+      this.type = newVal;
+    }
   }
 };
 </script>
@@ -86,13 +69,23 @@ export default {
   color: #ccc;
   text-align: center;
 }
+.carousel-bg.bg-1 {
+  background: center url(../../../assets/img/aboutUs/introduction-1.jpg) no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+.carousel-bg.bg-2 {
+  background: center url(../../../assets/img/aboutUs/introduction-2.jpg) no-repeat;
+  background-size: cover;
+  height: 400px;
+}
 .bg-box {
   background-color: #f9f9f9;
   position: relative;
   margin-top: 40px;
 }
 .bg-box .title {
-  font-size: 20px;
+  font-size: 24px;
   padding-left: 30px;
   text-align: left;
   position: relative;
@@ -102,16 +95,16 @@ export default {
   content: "";
   display: block;
   width: 3px;
-  height: 18px;
+  height: 24px;
   background: #606ecd;
   left: 0;
   top: 5px;
   position: absolute;
 }
 .bg-box .bg-content {
-  margin-right: 500px;
-  padding: 70px 120px 0;
-  height: 333px;
+  margin-right: 600px;
+  padding: 50px 120px 0;
+  height: 400px;
 }
 .bg-box .bg-content.right {
   margin-right: 0;
@@ -120,6 +113,6 @@ export default {
 .bg-box .bg-content p {
   line-height: 28px;
   color: #888;
-  font-size: 15px;
+  font-size: 18px;
 }
 </style>

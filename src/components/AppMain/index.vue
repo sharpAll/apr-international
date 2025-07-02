@@ -20,7 +20,7 @@ export default {
 <style scoped>
 .app-main {
   min-height: 92vh;
-  height: 1px;
+  height: 100%;
 }
 .fade-in-enter {
   opacity: 0;
