@@ -9,7 +9,11 @@
         <div class="bg-content right">
           <div class="title">รายละเอียดการติดต่อ</div>
           <p>
-            กล่องจดหมาย: info@hswmgt.com 
+            <b>Somchai Maha:</b> somchai.maha@apr.com<br/>
+            <b>Nattapon Wattanakul:</b> nattapon.wattanakul@apr.com<br/>
+            <b>Sunisa jaiyen:</b> sunisa.jaiyen@apr.com<br/>
+            <b>Rattana Sritong:</b> rattana.sritong@apr.com<br/>
+            <b>Wannisa Maniwong:</b> wannisa.maniwong@apr.com<br/>
           </p>
           <br />
           <p>
@@ -58,7 +62,7 @@
 }
 .bg-box .bg-content {
   margin-right: 600px;
-  padding: 50px 120px 0;
+  padding: 50px 80px 0;
   height: 400px;
 }
 .bg-box .bg-content.right {

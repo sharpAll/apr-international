@@ -1,5 +1,5 @@
 # apr-international
-包含中文、英文、泰语的综合调研机构网站
+包含中文、英文、泰语的商业调查服务网站
 
 ## Project setup
 ```
