@@ -9,11 +9,11 @@
         <div class="bg-content right">
           <div class="title">联系方式</div>
           <p>
-            <b>Somchai Maha:</b> somchai.maha@apr.com<br/>
-            <b>Nattapon Wattanakul:</b> nattapon.wattanakul@apr.com<br/>
-            <b>Sunisa jaiyen:</b> sunisa.jaiyen@apr.com<br/>
-            <b>Rattana Sritong:</b> rattana.sritong@apr.com<br/>
-            <b>Wannisa Maniwong:</b> wannisa.maniwong@apr.com<br/>
+            <b>Somchai Maha:</b> somchai.maha@apr-tha.com<br/>
+            <b>Nattapon Wattanakul:</b> nattapon.wattanakul@apr-tha.com<br/>
+            <b>Sunisa jaiyen:</b> sunisa.jaiyen@apr-tha.com<br/>
+            <b>Rattana Sritong:</b> rattana.sritong@apr-tha.com<br/>
+            <b>Wannisa Maniwong:</b> wannisa.maniwong@apr-tha.com<br/>
           </p>
           <br />
           <p>
