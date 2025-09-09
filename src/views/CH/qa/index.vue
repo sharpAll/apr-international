@@ -3,7 +3,7 @@
     <div class="title">Q & A</div>
     <div class="info">
       <p class="q">Q：如何联系我们的尽职调查部门？</p>
-      <p class="a">A：您可以发送电子邮件至info@hswmgt.com。您的信息必须包括您的身份、联系方式和联系我们的原因，我们的客户经理会及时跟进您的需求。</p>
+      <p class="a">A：您可以发送电子邮件至somchai.maha@apr-tha.com。您的信息必须包括您的身份、联系方式和联系我们的原因，我们的客户经理会及时跟进您的需求。</p>
     </div>
     <div class="info">
       <p class="q">Q：我的委托及相关信息会受到保护吗？</p>

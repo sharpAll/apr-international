@@ -3,7 +3,7 @@
     <div class="title">Q & A</div>
     <div class="info">
       <p class="q">Q：How to contact our due diligence department?</p>
-      <p class="a">A：You can send an email to info@hswmgt.com Your information must include your identity, contact information, and the reason for contacting us. Our account manager will promptly follow up on your needs.</p>
+      <p class="a">A：You can send an email to somchai.maha@apr-tha.com Your information must include your identity, contact information, and the reason for contacting us. Our account manager will promptly follow up on your needs.</p>
     </div>
     <div class="info">
       <p class="q">Q：Will my commission and related information be protected?</p>
