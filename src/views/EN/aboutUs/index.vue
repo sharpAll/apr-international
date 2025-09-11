@@ -9,7 +9,7 @@
         <div class="bg-content right">
           <div class="title">Company Profile</div>
           <p>
-            HSW is a professional consulting firm that provides clients with business decision-making guidance, offering highly compliant, ethical, and honest business investigation services.
+            APR is a professional consulting firm that provides clients with business decision-making guidance, offering highly compliant, ethical, and honest business investigation services.
           </p>
           <br />
           <p>
